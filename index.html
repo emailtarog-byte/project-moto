@@ -1,123 +1,143 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="en" data-bs-theme="dark">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>AutoLoco</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
     <link rel="stylesheet" href="style.css">
 </head>
-<body>
+<body class="d-flex flex-column min-vh-100 bg-black text-light">
 
-    <header>
-        <div class="brand">
-            <a href="index.html" class="logo">
-                <img src="assets/Auto.png" alt="AutoLoco logo">
-            </a>
-            <div class="brand-text">
-                <h1>AutoLoco</h1>
-                <p class="tagline">Bad decisions make great rides.</p>
+    <!-- Header & Nav -->
+    <header class="border-bottom border-secondary bg-dark-subtle py-3">
+        <div class="container d-flex flex-column flex-md-row align-items-center justify-content-between gap-3">
+            <div class="d-flex align-items-center gap-3">
+                <a href="index.html" class="d-inline-block">
+                    <img src="assets/Auto.png" alt="AutoLoco logo" width="50" height="50" class="rounded">
+                </a>
+                <div>
+                    <h1 class="h4 mb-0 fw-bold">AutoLoco</h1>
+                    <p class="small text-secondary mb-0">Bad decisions make great rides.</p>
+                </div>
             </div>
+            
+            <nav class="nav nav-pills gap-2">
+                <a class="nav-link text-light" href="#home">Home</a>
+                <a class="nav-link text-light" href="#about">About</a>
+                <a class="nav-link text-light" href="#recommendations">Recommendations</a>
+                <a class="nav-link text-light" href="#contacts">Contacts</a>
+            </nav>
         </div>
-        <nav>
-            <a href="#home">Home</a>
-            <a href="#about">About</a>
-            <a href="#recommendations">Recommendations</a>
-            <a href="#contacts">Contacts</a>
-        </nav>
     </header>
 
-    <main>
-        <section id="home" class="card">
-            <h2>Welcome</h2>
-            <h3>Built for the Obsessed.</h3>
+    <!-- Main -->
+    <main class="container my-5 flex-grow-1" style="max-width: 900px;">
+        
+        <!-- Welcome -->
+        <section id="home" class="card bg-dark-subtle border-secondary mb-4 p-4 shadow-sm">
+            <h2 class="h3 text-danger fw-bold">Welcome</h2>
+            <h3 class="h5 text-light-emphasis">Built for the Obsessed.</h3>
             <p>Explore articles, parts, and community events to get started. Whether you’re wrenching in the garage at 2 AM, dialed in for weekend track days, or cruising late-night meets, AutoLoco is your home base.</p>
             
-            <ul>
+            <ul class="mb-3">
                 <li>Latest Builds & Guides: Step-by-step modification logs and tuning theory.</li>
                 <li>Community Meets & Events: Track local roll-outs and open track day schedules.</li>
                 <li>Featured Rides: Member spotlight builds showcasing real-world performance.</li>
             </ul>
 
-            <div class="gallery">
-                <img src="assets/carmeet.png" alt="Car meet 1">
-                <img src="assets/carmeet2.png" alt="Car meet 2">
+            <div class="row g-3 mt-2">
+                <div class="col-sm-6">
+                    <img src="assets/carmeet.png" alt="Car meet 1" class="img-fluid rounded border border-secondary">
+                </div>
+                <div class="col-sm-6">
+                    <img src="assets/carmeet2.png" alt="Car meet 2" class="img-fluid rounded border border-secondary">
+                </div>
             </div>
         </section>
 
-        <section id="about" class="card">
-            <h2>About</h2>
-            <h3>Born from Late Nights and Bad Ideas.</h3>
+        <!-- About Section -->
+        <section id="about" class="card bg-dark-subtle border-secondary mb-4 p-4 shadow-sm">
+            <h2 class="h3 text-danger fw-bold">About</h2>
+            <h3 class="h5 text-light-emphasis">Born from Late Nights and Bad Ideas.</h3>
             <p>AutoLoco connects enthusiasts with parts, builds, and community. We started with a simple belief: the best builds come from taking risks, learning with grease on your hands, and chasing raw driving feel.</p>
-            <ul>
+            <ul class="mb-0">
                 <li>Track & Street Proven: If we wouldn't run it on our own machines, we don't feature it.</li>
                 <li>Knowledge Sharing: No gatekeeping—just straight advice on specs, fitment, and tuning.</li>
                 <li>Community First: Built by enthusiasts, funded by passion, driven by you.</li>
             </ul>
         </section>
 
-        <section id="recommendations" class="card">
-            <h2>Recommendations</h2>
-            <h3>Top 5 JDM Cars</h3>
+        <!-- Recommendations -->
+        <section id="recommendations" class="card bg-dark-subtle border-secondary mb-4 p-4 shadow-sm">
+            <h2 class="h3 text-danger fw-bold">Recommendations</h2>
+            <h3 class="h5 text-light-emphasis">Top 5 JDM Cars</h3>
             <p>Iconic Japanese performance cars—looking to start a project build or invest in genuine automotive history? Explore our definitive countdown of golden-era Japanese performance icons.</p>
             
-            <ol class="jdm-list">
-                <li class="car-item">
-                    <strong>#1 Nissan Skyline GT-R (R34)</strong>
-                    <img src="assets/car1.png" alt="Nissan Skyline GT-R R34" class="car-photo">
-                    <p><strong>Engine:</strong> 2.6L Twin-Turbo Inline-6 (RB26DETT)</p>
-                    <p><strong>Drivetrain:</strong> ATTESA E-TS All-Wheel Drive with Super-HICAS</p>
-                    <p><strong>Why Pick It:</strong> Racing pedigree, aggressive styling, advanced AWD traction, and iconic twin-turbo soundtrack.</p>
+            <ol class="list-unstyled d-flex flex-column gap-3 mb-0">
+                <li class="p-3 rounded border border-secondary bg-dark">
+                    <strong class="d-block mb-2 text-danger">#1 Nissan Skyline GT-R (R34)</strong>
+                    <img src="assets/car1.png" alt="Nissan Skyline GT-R R34" class="img-fluid rounded mb-3">
+                    <p class="mb-1"><strong>Engine:</strong> 2.6L Twin-Turbo Inline-6 (RB26DETT)</p>
+                    <p class="mb-1"><strong>Drivetrain:</strong> ATTESA E-TS All-Wheel Drive with Super-HICAS</p>
+                    <p class="mb-0 text-secondary"><strong>Why Pick It:</strong> Racing pedigree, aggressive styling, advanced AWD traction, and iconic twin-turbo soundtrack.</p>
                 </li>
 
-                <li class="car-item">
-                    <strong>#2 Toyota Supra MK4</strong>
-                    <img src="assets/car2.png" alt="Toyota Supra MK4" class="car-photo">
-                    <p><strong>Engine:</strong> 3.0L Twin-Turbo Inline-6 (2JZ-GTE)</p>
-                    <p><strong>Drivetrain:</strong> Rear-Wheel Drive (6-Speed Manual)</p>
-                    <p><strong>Why Pick It:</strong> Legendary iron-block reliability, massive aftermarket power potential, and iconic styling.</p>
+                <li class="p-3 rounded border border-secondary bg-dark">
+                    <strong class="d-block mb-2 text-danger">#2 Toyota Supra MK4</strong>
+                    <img src="assets/car2.png" alt="Toyota Supra MK4" class="img-fluid rounded mb-3">
+                    <p class="mb-1"><strong>Engine:</strong> 3.0L Twin-Turbo Inline-6 (2JZ-GTE)</p>
+                    <p class="mb-1"><strong>Drivetrain:</strong> Rear-Wheel Drive (6-Speed Manual)</p>
+                    <p class="mb-0 text-secondary"><strong>Why Pick It:</strong> Legendary iron-block reliability, massive aftermarket power potential, and iconic styling.</p>
                 </li>
 
-                <li class="car-item">
-                    <strong>#3 Mazda RX-7 (FD)</strong>
-                    <img src="assets/car3.png" alt="Mazda RX-7 FD" class="car-photo">
-                    <p><strong>Engine:</strong> 1.3L Twin-Turbo Rotary (13B-REW)</p>
-                    <p><strong>Drivetrain:</strong> Rear-Wheel Drive</p>
-                    <p><strong>Why Pick It:</strong> Near-perfect 50:50 weight balance, screaming high-revving rotary engine, and timeless design.</p>
+                <li class="p-3 rounded border border-secondary bg-dark">
+                    <strong class="d-block mb-2 text-danger">#3 Mazda RX-7 (FD)</strong>
+                    <img src="assets/car3.png" alt="Mazda RX-7 FD" class="img-fluid rounded mb-3">
+                    <p class="mb-1"><strong>Engine:</strong> 1.3L Twin-Turbo Rotary (13B-REW)</p>
+                    <p class="mb-1"><strong>Drivetrain:</strong> Rear-Wheel Drive</p>
+                    <p class="mb-0 text-secondary"><strong>Why Pick It:</strong> Near-perfect 50:50 weight balance, screaming high-revving rotary engine, and timeless design.</p>
                 </li>
 
-                <li class="car-item">
-                    <strong>#4 Honda NSX (NA1)</strong>
-                    <img src="assets/car4.png" alt="Honda NSX NA1" class="car-photo">
-                    <p><strong>Engine:</strong> 3.0L Naturally Aspirated V6 VTEC (C30A)</p>
-                    <p><strong>Drivetrain:</strong> Mid-Engine, Rear-Wheel Drive</p>
-                    <p><strong>Why Pick It:</strong> Ayrton Senna-tuned handling dynamics, lightweight all-aluminum chassis, and pure VTEC throttle response.</p>
+                <li class="p-3 rounded border border-secondary bg-dark">
+                    <strong class="d-block mb-2 text-danger">#4 Honda NSX (NA1)</strong>
+                    <img src="assets/car4.png" alt="Honda NSX NA1" class="img-fluid rounded mb-3">
+                    <p class="mb-1"><strong>Engine:</strong> 3.0L Naturally Aspirated V6 VTEC (C30A)</p>
+                    <p class="mb-1"><strong>Drivetrain:</strong> Mid-Engine, Rear-Wheel Drive</p>
+                    <p class="mb-0 text-secondary"><strong>Why Pick It:</strong> Ayrton Senna-tuned handling dynamics, lightweight all-aluminum chassis, and pure VTEC throttle response.</p>
                 </li>
 
-                <li class="car-item">
-                    <strong>#5 Mitsubishi Lancer Evolution VI</strong>
-                    <img src="assets/car5.png" alt="Mitsubishi Lancer Evolution VI" class="car-photo">
-                    <p><strong>Engine:</strong> 2.0L Turbo Inline-4 (4G63T)</p>
-                    <p><strong>Drivetrain:</strong> All-Wheel Drive with Active Yaw Control</p>
-                    <p><strong>Why Pick It:</strong> Championship rally heritage, instant turbo response, and razor-sharp AWD grip.</p>
+                <li class="p-3 rounded border border-secondary bg-dark">
+                    <strong class="d-block mb-2 text-danger">#5 Mitsubishi Lancer Evolution VI</strong>
+                    <img src="assets/car5.png" alt="Mitsubishi Lancer Evolution VI" class="img-fluid rounded mb-3">
+                    <p class="mb-1"><strong>Engine:</strong> 2.0L Turbo Inline-4 (4G63T)</p>
+                    <p class="mb-1"><strong>Drivetrain:</strong> All-Wheel Drive with Active Yaw Control</p>
+                    <p class="mb-0 text-secondary"><strong>Why Pick It:</strong> Championship rally heritage, instant turbo response, and razor-sharp AWD grip.</p>
                 </li>
             </ol>
         </section>
 
-        <section id="contacts" class="card">
-            <h2>Contacts</h2>
-            <h3>Let’s Talk Builds, Collabs, & Support.</h3>
+        <!-- Contacts -->
+        <section id="contacts" class="card bg-dark-subtle border-secondary mb-4 p-4 shadow-sm">
+            <h2 class="h3 text-danger fw-bold">Contacts</h2>
+            <h3 class="h5 text-light-emphasis">Let’s Talk Builds, Collabs, & Support.</h3>
             <p>Get in touch for collaborations, support, or partnerships:</p>
-            <ul>
-                <li>General Support: <a href="mailto:support@autoloco.com">support@autoloco.com</a></li>
-                <li>Build Submissions & Media: <a href="mailto:features@autoloco.com">features@autoloco.com</a></li>
-                <li>Partnerships & Wholesale: <a href="mailto:partners@autoloco.com">partners@autoloco.com</a></li>
+            <ul class="mb-0">
+                <li>General Support: <a href="mailto:support@autoloco.com" class="text-danger">support@autoloco.com</a></li>
+                <li>Build Submissions & Media: <a href="mailto:features@autoloco.com" class="text-danger">features@autoloco.com</a></li>
+                <li>Partnerships & Wholesale: <a href="mailto:partners@autoloco.com" class="text-danger">partners@autoloco.com</a></li>
             </ul>
         </section>
     </main>
 
-    <footer>
-        <p>Built on <strong>AutoLoco.</strong> <br>© Autoloco 2026. All rights reserved.</p>
+    <!-- Footer -->
+    <footer class="border-top border-secondary bg-dark-subtle text-center py-3 text-secondary small">
+        <div class="container">
+            <p class="mb-0">Built on <strong class="text-light">AutoLoco</strong>. Autoloco 2026. All rights reserved.</p>
+        </div>
     </footer>
 
+   
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
 </body>
 </html>

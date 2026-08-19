@@ -1,172 +1,29 @@
 :root {
-    --bg-dark: #121212;
-    --card-bg: #1e1e1e;
-    --text-light: #f5f5f5;
-    --text-muted: #aaaaaa;
-    --accent: #d32f2f;
-    --accent-hover: #b71c1c;
-    --border-color: #333333;
+    --accent-red: #d32f2f;
 }
 
-* {
-    box-sizing: border-box;
-    margin: 0;
-    padding: 0;
+html {
+    scroll-behavior: smooth;
 }
 
-body {
-    display: flex;
-    flex-direction: column;
-    min-height: 100vh;
-    font-family: Arial, sans-serif;
-    line-height: 1.6;
-    background-color: var(--bg-dark);
-    color: var(--text-light);
+.nav-pills .nav-link {
+    transition: background-color 0.2s ease, color 0.2s ease;
 }
 
-main {
-    flex: 1;
-    width: 100%;
-    max-width: 900px;
-    margin: 0 auto;
-    padding: 20px;
-}
-
-header {
-    background-color: #000000;
-    border-bottom: 2px solid var(--border-color);
-    padding: 16px 20px;
-    text-align: center;
-}
-
-.brand {
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    gap: 15px;
-    margin-bottom: 12px;
-}
-
-.logo img {
-    width: 55px;
-    height: auto;
-    border-radius: 6px;
-}
-
-.brand-text h1 {
-    font-size: 28px;
-    letter-spacing: 1px;
-}
-
-.tagline {
-    color: var(--text-muted);
-    font-size: 14px;
-}
-
-nav {
-    display: flex;
-    justify-content: center;
-    gap: 15px;
-    position: sticky;
-    top: 0;
-    background-color: #000000;
-    padding: 10px 0;
-    border-top: 1px solid var(--border-color);
-    z-index: 100;
-}
-
-nav a {
-    color: var(--text-light);
-    text-decoration: none;
-    padding: 6px 14px;
-    border-radius: 4px;
-    transition: background-color 0.3s, color 0.3s;
-}
-
-nav a:hover {
-    background-color: var(--accent);
-    color: #ffffff;
+.nav-pills .nav-link:hover {
+    background-color: var(--accent-red);
+    color: #ffffff !important;
 }
 
 .card {
-    background-color: var(--card-bg);
-    border: 1px solid var(--border-color);
-    border-radius: 8px;
-    padding: 24px;
-    margin-bottom: 24px;
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
-    transition: transform 0.2s, box-shadow 0.2s;
+    transition: transform 0.2s ease, box-shadow 0.2s ease;
 }
 
 .card:hover {
-    transform: translateY(-4px);
-    box-shadow: 0 6px 14px rgba(0, 0, 0, 0.5);
+    transform: translateY(-3px);
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.4) !important;
 }
 
-h2 {
-    color: var(--accent);
-    margin-bottom: 6px;
-    font-size: 22px;
-}
-
-h3 {
-    margin-bottom: 14px;
-    font-size: 18px;
-}
-
-p {
-    margin-bottom: 12px;
-}
-
-ul, ol {
-    margin-left: 24px;
-    margin-bottom: 16px;
-}
-
-li {
-    margin-bottom: 8px;
-}
-
-a {
-    color: var(--accent);
-}
-
-.gallery {
-    display: flex;
-    gap: 12px;
-    margin-top: 16px;
-}
-
-.gallery img {
-    width: 50%;
-    border-radius: 6px;
-}
-
-.jdm-list {
-    list-style-position: inside;
-}
-
-.car-item {
-    background-color: #161616;
-    border: 1px solid var(--border-color);
-    border-radius: 6px;
-    padding: 16px;
-    margin-top: 16px;
-}
-
-.car-photo {
-    width: 100%;
-    max-height: 250px;
+.card img {
     object-fit: cover;
-    border-radius: 6px;
-    margin: 10px 0;
-}
-
-footer {
-    background-color: #000000;
-    text-align: center;
-    padding: 18px;
-    border-top: 1px solid var(--border-color);
-    font-size: 14px;
-    color: var(--text-muted);
 }
