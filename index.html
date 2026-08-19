@@ -1,60 +1,100 @@
 <!doctype html>
 <html lang="en">
-	<head>
-		<meta charset="utf-8">
-		<meta name="viewport" content="width=device-width, initial-scale=1">
-		<title>AutoLoco</title>
-		<link rel="stylesheet" href="style.css">
-	</head>
-	<body>
-		<div class="container">
-			<header>
-				<div class="brand">
-					<a href="index.html" title="Project Moto" class="logo">
-						<img src="assets/Auto.png" alt="Automotive logo">
-					</a>
-					<div>
-						<h1>AutoLoco</h1>
-						<p class="muted">Bad decisions make great rides.</p>
-					</div>
-				</div>
-				<nav class="topnav" aria-label="Primary">
-					<a href="#main-content">Home</a>
-					<a href="#about">About</a>
-					<a href="#shop">Shop</a>
-					<a href="#contacts">Contacts</a>
-				</nav>
-			</header>
-			<nav class="navbar">
-                <p></p>
+<head>
+ 	<meta charset="utf-8">
+ 	<meta name="viewport" content="width=device-width, initial-scale=1">
+ 	<title>AutoLoco</title>
+ 	<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
+ 	<link rel="stylesheet" href="style.css">
+</head>
+<body>
+ 	<div class="container">
+ 		<header>
+ 			<div class="brand">
+ 				<a href="index.html" class="logo" aria-label="AutoLoco home">
+ 					<img src="assets/Auto.png" alt="AutoLoco logo">
+ 				</a>
+ 				<div class="brand-text">
+ 					<h1>AutoLoco</h1>
+ 					<p class="muted">Bad decisions make great rides.</p>
+ 				</div>
+ 			</div>
+ 			<nav class="top-nav" aria-label="Primary navigation">
+ 				<a href="#home">Home</a>
+ 				<a href="#about">About</a>
+ 				<a href="#shop">Shop</a>
+ 				<a href="#contacts">Contacts</a>
+ 			</nav>
+ 		</header>
+
+ 		<section class="hero">
+ 			<div class="hero-inner">
 				<p class="lead">Welcome to AutoLoco — your hub for automotive culture, precision parts, and performance. Whether you're building a track-ready machine, hunting rare modifications, or connecting with fellow gearheads, we help put you in the driver's seat.</p>
-				<a class="nav-button" href="#main-content">Get started</a>
-			</nav>
+				<img src="assets/carmeet.png" alt="Car meet hero" class="hero-photo">
+				<a class="button" href="#main-content">Get started</a>
+ 			</div>
+ 		</section>
 
-			<main id="main-content" class="card" role="main">
-				<!-- Main content here -->
-				<section id="home">
-					<h2>Welcome</h2>
-					<p>Explore articles, parts, and community events to get started.</p>
-				</section>
-				<section id="about">
-					<h2>About</h2>
-					<p>AutoLoco connects enthusiasts with parts, builds, and community.</p>
-				</section>
-				<section id="shop">
-					<h2>Shop</h2>
-					<p>Browse curated parts and accessories.</p>
-				</section>
-				<section id="contacts">
-					<h2>Contacts</h2>
-					<p>Get in touch for collaborations, support, or partnerships.</p>
-				</section>
-			</main>
+ 		<main id="main-content" class="card" role="main">
+ 			<section id="home">
+ 				<h2>Welcome</h2>
+ 				<h3>Built for the Obsessed.</h3>
+ 				<p>Explore articles, parts, and community events to get started. Whether you’re wrenching in the garage at 2 AM, dialed in for weekend track days, or cruising late-night meets, AutoLoco is your home base.</p>
+ 				<ul>
+ 					<li>Latest Builds & Guides: Step-by-step modification logs and tuning theory.</li>
+ 					<li>Community Meets & Events: Track local roll-outs and open track day schedules.</li>
+ 					<li>Featured Rides: Member spotlight builds showcasing real-world performance.</li>
+				<div class="gallery" aria-label="Home gallery">
+					<img src="assets/carmeet.png" alt="Car meet 1">
+					<img src="assets/carmeet2.png" alt="Car meet 2">
+				</div>
+ 				</ul>
+ 			</section>
 
-			<footer>
-				Built on <strong>Project Moto</strong>. Need a custom build or parts? Ask me.
-			</footer>
-		</div>
-	</body>
+ 			<section id="about">
+ 				<h2>About</h2>
+ 				<h3>Born from Late Nights and Bad Ideas.</h3>
+ 				<p>AutoLoco connects enthusiasts with parts, builds, and community. We started with a simple belief: the best builds come from taking risks, learning with grease on your hands, and chasing raw driving feel.</p>
+ 				<ul>
+ 					<li>Track & Street Proven: If we wouldn't run it on our own machines, we don't feature it.</li>
+ 					<li>Knowledge Sharing: No gatekeeping—just straight advice on specs, fitment, and tuning.</li>
+ 					<li>Community First: Built by enthusiasts, funded by passion, driven by you.</li>
+ 				</ul>
+ 			</section>
+
+ 			<section id="shop">
+ 				<h2>Shop</h2>
+ 				<h3>Precision Hardware & Driver Essentials.</h3>
+ 				<p>Browse curated parts and accessories engineered for reliability, responsiveness, and aggressive styling.</p>
+ 				<ul>
+ 					<li>Performance & Engine: Intakes, forced induction upgrades, exhaust systems, and ECU tuning.</li>
+ 					<li>Suspension & Footwork: Track-spec coilovers, sway bars, bushings, and lightweight forged wheels.</li>
+ 					<li>Cockpit & Interior: Bolstered seats, telemetry gauges, and quick-release hubs.</li>
+ 				</ul>
+					<div class="gallery" aria-label="Shop gallery">
+						<img src="assets/engine.png" alt="Engine 1">
+						<img src="assets/engine2.png" alt="Engine 2">
+					</div>
+ 			</section>
+
+ 			<section id="contacts">
+ 				<h2>Contacts</h2>
+ 				<h3>Let’s Talk Builds, Collabs, & Support.</h3>
+ 				<p>Get in touch for collaborations, support, or partnerships. Have a question about part fitment or looking to feature your project car?</p>
+ 				<ul>
+ 					<li>General Support: support@autoloco.com</li>
+ 					<li>Build Submissions & Media: features@autoloco.com</li>
+ 					<li>Partnerships & Wholesale: partners@autoloco.com</li>
+ 				</ul>
+ 			</section>
+ 		</main>
+
+ 		<footer>
+ 			Built on <strong>AutoLoco</strong>. Need a custom build or parts? Ask me.<br>
+            Autoloco 2026. All rights reserved.
+ 		</footer>
+</body>
+ 	<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
+</html>
 </html>
 
